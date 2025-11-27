@@ -1,6 +1,6 @@
-# Next Steps for ChronoX
+# Next Steps for chroncraft
 
-Congratulations! ChronoX has been successfully generated. Here's what to do next:
+Congratulations! chroncraft has been successfully generated. Here's what to do next:
 
 ## 1. Install Dependencies
 
@@ -155,9 +155,13 @@ This will:
 2. Run all tests
 3. Verify bundle sizes
 
-If everything passes, you can publish:
+If everything passes, you can publish to npm:
 
 ```bash
+# Ensure you are logged in to npm
+npm login
+
+# Publish the scoped package to https://www.npmjs.com/package/@ian-p1nt0/chronox
 npm publish
 ```
 
@@ -304,8 +308,8 @@ If you encounter any issues:
 - [ ] Benchmarks run successfully
 - [ ] Examples work correctly
 
-Once all items are checked, ChronoX is ready to use!
+Once all items are checked, chroncraft is ready to use!
 
 ---
 
-**Happy coding with ChronoX!** 🚀
+**Happy coding with chroncraft!** 🚀

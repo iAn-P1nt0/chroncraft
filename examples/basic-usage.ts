@@ -1,5 +1,5 @@
 /**
- * Basic usage examples for ChronoX
+ * Basic usage examples for chroncraft
  */
 
 import {

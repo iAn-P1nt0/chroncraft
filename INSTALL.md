@@ -1,28 +1,28 @@
-# ChronoX Installation Guide
+# chroncraft Installation Guide
 
 ## Quick Install
 
 ### npm
 
 ```bash
-npm install chronox
+npm install chroncraft
 ```
 
 ### yarn
 
 ```bash
-yarn add chronox
+yarn add chroncraft
 ```
 
 ### pnpm
 
 ```bash
-pnpm add chronox
+pnpm add chroncraft
 ```
 
 ## Development Setup
 
-If you're contributing to ChronoX or want to build from source:
+If you're contributing to chroncraft or want to build from source:
 
 ### Prerequisites
 
@@ -32,8 +32,8 @@ If you're contributing to ChronoX or want to build from source:
 ### Clone and Install
 
 ```bash
-git clone https://github.com/ian-p1nt0/chronox.git
-cd chronox
+git clone https://github.com/ian-p1nt0/chroncraft.git
+cd chroncraft
 npm install
 ```
 
@@ -90,7 +90,7 @@ npm run size
 ## Project Structure
 
 ```
-chronox/
+chroncraft/
 ├── src/                  # Source code
 │   ├── core/            # Core date primitives
 │   ├── format/          # Formatting engine
@@ -112,7 +112,7 @@ chronox/
 ### ES Modules (Recommended)
 
 ```typescript
-import { createDate, format } from 'chronox';
+import { createDate, format } from 'chroncraft';
 
 const date = createDate('2025-01-15');
 console.log(format(date, 'YYYY-MM-DD'));
@@ -121,7 +121,7 @@ console.log(format(date, 'YYYY-MM-DD'));
 ### CommonJS
 
 ```javascript
-const { createDate, format } = require('chronox');
+const { createDate, format } = require('chroncraft');
 
 const date = createDate('2025-01-15');
 console.log(format(date, 'YYYY-MM-DD'));
@@ -131,7 +131,7 @@ console.log(format(date, 'YYYY-MM-DD'));
 
 ```html
 <script type="module">
-  import { createDate, format } from 'https://cdn.jsdelivr.net/npm/chronox/+esm';
+  import { createDate, format } from 'https://cdn.jsdelivr.net/npm/chroncraft/+esm';
 
   const date = createDate('2025-01-15');
   console.log(format(date, 'YYYY-MM-DD'));
@@ -143,7 +143,7 @@ console.log(format(date, 'YYYY-MM-DD'));
 ChronoX includes TypeScript definitions. No additional setup required:
 
 ```typescript
-import { createDate, format, ChronoDate } from 'chronox';
+import { createDate, format, ChronoDate } from 'chroncraft';
 
 const date: ChronoDate = createDate('2025-01-15');
 ```
@@ -183,9 +183,9 @@ Vite has tree-shaking enabled by default. No additional configuration needed.
 
 ### Module Not Found
 
-If you see "Cannot find module 'chronox'":
+If you see "Cannot find module 'chroncraft'":
 
-1. Ensure ChronoX is installed: `npm list chronox`
+1. Ensure chroncraft is installed: `npm list chroncraft`
 2. Clear your package manager cache: `npm cache clean --force`
 3. Delete `node_modules` and reinstall: `rm -rf node_modules && npm install`
 
@@ -214,5 +214,5 @@ If the build fails:
 
 ## Support
 
-- Issues: https://github.com/ian-p1nt0/chronox/issues
-- Discussions: https://github.com/ian-p1nt0/chronox/discussions
+- Issues: https://github.com/ian-p1nt0/chroncraft/issues
+- Discussions: https://github.com/ian-p1nt0/chroncraft/discussions

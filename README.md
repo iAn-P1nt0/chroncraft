@@ -1,9 +1,9 @@
-# ChronoX
+# chroncraft
 
 > Next-generation JavaScript date/time library - lightweight, fast, and tree-shakeable
 
-[![npm version](https://img.shields.io/npm/v/chronox.svg)](https://www.npmjs.com/package/chronox)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/chronox)](https://bundlephobia.com/package/chronox)
+[![npm version](https://img.shields.io/npm/v/chroncraft.svg)](https://www.npmjs.com/package/chroncraft)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/chroncraft)](https://bundlephobia.com/package/chroncraft)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Why ChronoX?
@@ -25,21 +25,21 @@ ChronoX is a modern date/time library designed to replace legacy solutions like 
 ## Installation
 
 ```bash
-npm install chronox
+npm install chroncraft
 ```
 
 ```bash
-yarn add chronox
+yarn add chroncraft
 ```
 
 ```bash
-pnpm add chronox
+pnpm add chroncraft
 ```
 
 ## Quick Start
 
 ```typescript
-import { createDate, format, addDays } from 'chronox';
+import { createDate, format, addDays } from 'chroncraft';
 
 // Create a date
 const date = createDate('2025-01-15T10:30:00Z');
@@ -53,7 +53,7 @@ const future = addDays(date, 5); // 2025-01-20
 const past = addDays(date, -5); // 2025-01-10
 
 // Comparison
-import { isBefore, diff } from 'chronox';
+import { isBefore, diff } from 'chroncraft';
 
 const date1 = createDate('2025-01-15');
 const date2 = createDate('2025-01-20');
@@ -125,7 +125,7 @@ Formats a date according to the specified format string.
 **Presets:**
 
 ```typescript
-import { FORMAT_PRESETS } from 'chronox';
+import { FORMAT_PRESETS } from 'chroncraft';
 
 format(date, 'ISO'); // ISO 8601
 format(date, 'ISO_DATE'); // YYYY-MM-DD
@@ -166,7 +166,7 @@ import {
   addSeconds,
   addDuration,
   subtractDays,
-} from 'chronox';
+} from 'chroncraft';
 
 const date = createDate('2025-01-15T10:00:00Z');
 
@@ -196,7 +196,7 @@ import {
   diff,
   min,
   max,
-} from 'chronox';
+} from 'chroncraft';
 
 const date1 = createDate('2025-01-15');
 const date2 = createDate('2025-01-20');
@@ -218,7 +218,7 @@ max(date1, date2); // date2
 ### Timezone Support
 
 ```typescript
-import { toTimezone, getTimezoneOffset } from 'chronox/timezone';
+import { toTimezone, getTimezoneOffset } from 'chroncraft/timezone';
 
 const utcDate = createDate('2025-01-15T10:00:00Z');
 
@@ -234,7 +234,7 @@ getTimezoneOffset('PST'); // -480 (minutes)
 ### Temporal API Compatibility
 
 ```typescript
-import { PlainDate, PlainTime, PlainDateTime } from 'chronox/temporal';
+import { PlainDate, PlainTime, PlainDateTime } from 'chroncraft/temporal';
 
 // Use Temporal-like API
 const date = PlainDate.from('2025-01-15');
@@ -248,7 +248,7 @@ const chronoDate = date.toChronoDate();
 ### Batch Operations (SIMD Optimized)
 
 ```typescript
-import { formatBatch, addDurationBatch } from 'chronox/simd';
+import { formatBatch, addDurationBatch } from 'chroncraft/simd';
 
 const dates = [date1, date2, date3, date4];
 
@@ -265,14 +265,14 @@ ChronoX is fully tree-shakeable. Import only what you need:
 
 ```typescript
 // Minimal bundle (~3KB)
-import { createDate, format } from 'chronox';
+import { createDate, format } from 'chroncraft';
 
 // With parsing (~4KB)
-import { createDate, format, parseISO } from 'chronox';
+import { createDate, format, parseISO } from 'chroncraft';
 
 // With timezone (~7KB)
-import { createDate, format } from 'chronox';
-import { toTimezone } from 'chronox/timezone';
+import { createDate, format } from 'chroncraft';
+import { toTimezone } from 'chroncraft/timezone';
 ```
 
 ## Performance
@@ -310,7 +310,7 @@ ChronoX is designed for performance:
 ChronoX is written in TypeScript and provides full type definitions out of the box.
 
 ```typescript
-import type { ChronoDate, Duration, Unit } from 'chronox';
+import type { ChronoDate, Duration, Unit } from 'chroncraft';
 
 const date: ChronoDate = createDate('2025-01-15');
 const duration: Duration = { days: 5, hours: 3 };
@@ -343,7 +343,7 @@ addDays(new Date(), 5);
 isBefore(new Date('2025-01-15'), new Date('2025-01-20'));
 
 // ChronoX
-import { format, addDays, isBefore, createDate } from 'chronox';
+import { format, addDays, isBefore, createDate } from 'chroncraft';
 format(createDate(), 'YYYY-MM-DD');
 addDays(createDate(), 5);
 isBefore(createDate('2025-01-15'), createDate('2025-01-20'));

@@ -1,6 +1,6 @@
 {
-  "name": "@ian-p1nt0/chronox",
-  "version": "0.1.1",
+  "name": "chroncraft",
+  "version": "0.2.0",
   "description": "Next-generation JavaScript date/time library - lightweight, fast, and tree-shakeable",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -74,12 +74,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ian-p1nt0/chronox.git"
+    "url": "https://github.com/ian-p1nt0/chroncraft.git"
   },
   "bugs": {
-    "url": "https://github.com/ian-p1nt0/chronox/issues"
+    "url": "https://github.com/ian-p1nt0/chroncraft/issues"
   },
-  "homepage": "https://github.com/ian-p1nt0/chronox#readme",
+  "homepage": "https://github.com/ian-p1nt0/chroncraft#readme",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

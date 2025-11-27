@@ -1,5 +1,5 @@
 /**
- * ChronoX - Next-generation JavaScript date/time library
+ * chroncraft - Next-generation JavaScript date/time library
  * Lightweight, fast, and tree-shakeable
  */
 

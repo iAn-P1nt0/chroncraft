@@ -1,7 +1,8 @@
-# AGENTS.md - AI Coding Agent Instructions for ChronoX
+# AGENTS.md - AI Coding Agent Instructions for chroncraft
 
-**Project**: ChronoX Date/Time Library  
+**Project**: chroncraft Date/Time Library  
 **Type**: TypeScript npm package  
+**NPM Package**: chroncraft (https://www.npmjs.com/package/chroncraft)  
 **Agent Compatibility**: Claude Code, GitHub Copilot, Cursor, Zed, OpenCode  
 **Last Updated**: November 2025
 
@@ -9,7 +10,7 @@
 
 ## 📌 Project Overview
 
-ChronoX is a high-performance, TypeScript-first date/time library designed to replace Moment.js and improve upon date-fns. The library prioritizes bundle size (< 5KB), performance (2-3x faster), and developer experience.
+chroncraft is a high-performance, TypeScript-first date/time library designed to replace Moment.js and improve upon date-fns. The library prioritizes bundle size (< 5KB), performance (2-3x faster), and developer experience.
 
 **Primary Goals:**
 1. Ultra-lightweight bundle with tree-shaking support
@@ -22,7 +23,7 @@ ChronoX is a high-performance, TypeScript-first date/time library designed to re
 
 ## 🎯 Agent Objectives
 
-When working on ChronoX, AI agents must:
+When working on chroncraft, AI agents must:
 
 1. **Maintain bundle size budget**: Every change must keep total bundle < 5KB
 2. **Write type-safe code**: TypeScript strict mode with no `any` types
@@ -36,7 +37,7 @@ When working on ChronoX, AI agents must:
 ## 🏗️ Project Structure
 
 ```
-chronox/
+chroncraft/
 ├── src/
 │   ├── core/              # Date primitives and factories
 │   │   ├── create.ts      # createDate factory function

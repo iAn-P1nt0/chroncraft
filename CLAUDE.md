@@ -1,15 +1,16 @@
-# CLAUDE.md - ChronoX Development Guide
+# CLAUDE.md - chroncraft Development Guide
 
-**Project**: ChronoX - Next-Generation JavaScript Date/Time Library  
+**Project**: chroncraft - Next-Generation JavaScript Date/Time Library  
 **Purpose**: TypeScript npm package replacing Moment.js with performance focus  
 **Target Bundle Size**: < 5KB minified + gzipped  
-**Repository**: chronox (npm package name)
+**Repository**: chroncraft
+**Package Name**: chroncraft (https://www.npmjs.com/package/chroncraft)
 
 ---
 
 ## 🎯 Project Mission
 
-ChronoX is a modern date/time library designed to replace legacy solutions like Moment.js and overcome performance limitations in date-fns. It combines ultra-lightweight bundle size with cutting-edge optimizations including SIMD operations, comprehensive timezone handling, and Temporal API compatibility.
+chroncraft is a modern date/time library designed to replace legacy solutions like Moment.js and overcome performance limitations in date-fns. It combines ultra-lightweight bundle size with cutting-edge optimizations including SIMD operations, comprehensive timezone handling, and Temporal API compatibility.
 
 ---
 
@@ -41,7 +42,7 @@ ChronoX is a modern date/time library designed to replace legacy solutions like 
 ## 🏗️ Project Architecture
 
 ```
-chronox/
+chroncraft/
 ├── src/
 │   ├── core/           # Core date primitives and factories
 │   ├── format/         # Formatting engine (token-based)
