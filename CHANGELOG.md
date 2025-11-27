@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2025-11-27
+
+### Changed
+
+- Renamed package from @ian-p1nt0/chronox to unscoped chroncraft
+- Updated all documentation and imports to reflect new package name
+- Updated repository references to chroncraft repository
+- Improved package metadata and npm configuration
+
+## [0.2.0] - 2025-11-27
+
+### Added
+
+- Initial release of chroncraft (forked from ChronoX)
+- Full feature parity with ChronoX 0.1.0
+- Production-ready date/time library with zero runtime dependencies
+
 ## [0.1.0] - 2025-11-17
 
 ### Added
