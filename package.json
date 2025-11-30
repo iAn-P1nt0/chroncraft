@@ -1,6 +1,6 @@
 {
   "name": "chroncraft",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Next-generation JavaScript date/time library - lightweight, fast, and tree-shakeable",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
